@@ -1,7 +1,13 @@
-a = float(input("wprowadź liczbę: "))
-b = float(input("wprowadź kolejną liczbę: "))
 
-if b > 0 or b < 0:
-    print(a / b)
-else:
-    print("Nie można dzielić przez zero !")
+suma = 0
+liczba_wartosci = 0
+
+while True:
+    a = int(input())
+    if a == 0:
+        break
+    suma += a
+    liczba_wartosci += 1
+
+print("suma" + "" + ":" + str(suma))
+print("Liczba wartości" + "" + ":" + str(liczba_wartosci))

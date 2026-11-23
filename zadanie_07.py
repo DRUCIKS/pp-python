@@ -1,11 +1,15 @@
+n = int(input("wpisz liczbę studentów: "))
+suma = 0
 
-n = int(input("Podaj liczbę całkowitą n: "))
-if n <= 0:
-    print("Błąd")
+for _ in range(n):
+    while True:
+        wynik = int(input("wprowadź wynik studenta: "))
+        if wynik < 0 or wynik > 100:
+            print("Niepoprawny wynik")
+        else:
+            suma += wynik
+            break
 
-for i in range(n):
-    if i == 0:
-        wynik = 0
-    else:
-        wynik = 2 ** i
-    print(f"Python {wynik}")
+print(f"Suma: {suma}")
+
+

@@ -1,15 +1,7 @@
-a = input("wprowadź pierwszą liczbę: ")
-b = input("wprowadź drugą liczbę: ")
+n = int(input("wpisz liczbę całkowitą: "))
 
-a = int(a)
-b = int(b)
-
-print(a > b)
-
-
-if a > b:
-    print("1 liczba większa")
-else:
-    print("2 liczba większa")
-
-print("koniec sprawdzania")
+for n in range(1, n + 1):
+    if (n % 2 == 0): 
+        print(n)
+        n = n - 2
+    

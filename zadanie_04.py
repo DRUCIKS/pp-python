@@ -1,6 +1,4 @@
-a = int(input("wprowadź liczbę: "))
+n = int(input("wpisz liczbę całkowitą: "))
 
-if a % 2 == 0:
-    print("liczba parzysta")
-else:
-    print("Liczba nieparzysta")
+for n in range(1, n + 1):
+    print(n * "#")

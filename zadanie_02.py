@@ -1,8 +1,10 @@
-a = input("wprowadź cene produktu: ")
-b = input("wprowadź ilość sztuk: ")
+n = int(input("wpisz liczbę całkowitą: "))
+while n > 0:
+    print(n)
+    n = n - 1
 
-a = float(a)
-b = int(b)
-print("Cena=")
-print(a * b)
-
+    if n == 0:
+        print("0")
+        print("start !")
+    
+    
